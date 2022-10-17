@@ -1,0 +1,44 @@
+.front-page-header >* label {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text > h2 {
+    color: #1F2123;
+    font-family: Merriweather;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.banner-text > p {
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.banner-text > button {
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+    background-color: #47525E;
+    border: #47525E;
+    border-radius: 5px;
+    width: 192px;
+    height: 50px;
+}
+
+.banner-img > img {
+    height: 527px;
+}
