@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ee">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Ostukorv</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- minu CSS -->
+  <link rel="stylesheet" href="pages/ostukorv/ostukorv.css">
+</head>
+
+<body>
+  <!-- päis -->
+  <header class="py-2">
+    <div id="transportAlert" class="alert alert-warning alert-dismissible fade show" role="alert">
+      Tasuta transport üle 50€ ostu puhul!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </header>
+  <!-- navigatsioon -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><img src="assets/logo.png" alt="logo"
+              class="header-logo"></a>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">E-pood</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blogi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kauplused</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+      </ul>
+      <!-- search -->
+      <form class="form-inline m-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+        <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier">
+            <use xlink:href="#lnr-magnifier"></use>
+          </svg></button>
+      </form>
+    </div>
+    <!-- cart -->
+    <a href="ostukorv.html"><span class="glyphicon glyphicon-shopping-cart"></span><svg class="lnr lnr-cart">
+        <use xlink:href="#lnr-cart"></use>
+      </svg></button></a>
+  </nav>
+  <section>
+
+    <!-- ostukorv -->
+    <section>
+      <div class="container">
+        <div class="column-ostukorv">
+          <div class="mb-auto p-2">
+            <h4>Ostukorv</h4>
+          </div>
+          <div class="mb-auto p-2 row">
+            <div class="col-lg-6">
+              <img src="assets/soap.png" width="100%">
+            </div>
+            <div class="col-lg-6">
+              <h5 id="toode1Hind">Toode x eur</h5>
+              <div class="counter_container">
+                <h5>Kogus<h5>
+                    <button class="btn-toode" id="subtract1">-</button>
+                    <span id="output1">0</span>
+                    <button class="btn-toode" id="add1">+</button>
+              </div>
+              <br />
+            </div>
+          </div>
+
+          <div class="mb-auto p-2 row">
+            <div class="col-lg-6">
+              <img src="assets/soap.png" width="100%">
+            </div>
+            <div class="col-lg-6">
+              <h5 id="toode2Hind">Toode x eur</h5>
+              <div class="counter_container">
+                <h5>Kogus<h5>
+                    <button class="btn-toode" id="subtract2">-</button>
+                    <span id="output2">0</span>
+                    <button class="btn-toode" id="add2">+</button>
+              </div>
+              <br />
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <div class="column-andmed">
+          <!-- TODO! --->
+          <div class="p-2">
+            <h4>Andmed</h4>
+          </div>
+          <form>
+            <div class="andmed">
+              <div class="p-2">
+                <input type="text" class="form-control" id="Nimi" placeholder="Nimi">
+              </div>
+              <div class="p-2">
+                <input type="text" class="form-control" id="Aadress" placeholder="Aadress">
+              </div>
+              <div class="p-2">
+                <input type="text" class="form-control" id="Email" placeholder="E-mail">
+              </div>
+              <div class="p-2">
+                <input type="text" class="form-control" id="Telefoninumber" placeholder="Telefoninumber">
+              </div>
+
+              <div class="p-2" id="tarneviis">
+                <select name="Tarneviis" required>
+                  <option value="" disabled selected hidden>Tarneviis</option>
+                  <option value="omniva">Omniva pakiautomaat</option>
+                  <option value="smartpost">Smartpost pakiautomaat</option>
+                  <option value="dpd">DPD pakiautomaat</option>
+                  <option value="tulenIse">Tulen ise järele</option>
+                </select>
+              </div>
+              <div class="hinnad">
+                <div class="container-hind-transport">
+                  <p id="hind-transport">Transport: y eur</p>
+                </div>
+                <div class="container-hind-kokku">
+                  <p id="hind-kokku">Kokku: z eur</p>
+                </div>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadio" id="Pangalink">
+                <label class="form-check-label" for="Pangalink">
+                  Pangalink
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadio" id="Esto" checked>
+                <label class="form-check-label" for="Esto">
+                  ESTO 3 makseviis - maksa 3 võrdse osana 3 kuu jooksul, 0% intress!
+                </label>
+              </div>
+              <div class="p-2 mx-auto">
+                <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksma</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <!-- jalus -->
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="col-6 col-sm-2 footer-logo">
+          <img src="assets/logo.png" alt="logo">
+        </div>
+        <div class="col-6 col-sm-2 footer-menu">
+          <label>E-Pood</label>
+          <label>Blogi</label>
+          <label>Kauplused</label>
+          <label>Kontakt</label>
+          <label>Tingimused</label>
+        </div>
+        <div class="col-12 col-sm-8 footer-contact">
+          <label>Soovid saada meie uudiskirju?</label>
+          <div class="contact-email">
+            <input type="text" placeholder="Sisesta oma e-mail">
+            <button>Telli</button>
+          </div>
+          <div class="social-media">
+            <img src="fb.png">
+            <img src="ig.png">
+            <img src="yt.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script defer src="pages/ostukorv/ostukorv.js"></script>
+</body>
+
+</html>

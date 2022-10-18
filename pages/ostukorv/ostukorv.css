@@ -1,0 +1,155 @@
+#transportAlert {
+  background-color: #969FAA;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: #F7F7F7;
+}
+
+.header-logo {
+  height: 65px;
+}
+
+.navbar {
+  font-weight: bold;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.lnr {
+  display: inline-block;
+  fill: black;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  stroke-width: 2;
+}
+
+.andmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hinnad {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.lnr-cart {
+  width: 1.5em;
+  height: 1.5em;
+  color: black;
+}
+
+.navbar-nav li {
+  margin-right: 3em;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.column-ostukorv {
+  display: flex;
+  flex-direction: column
+}
+
+.column-andmed {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter_container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 6px;
+  margin-top: 1rem;
+}
+
+.btn-toode {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+
+#tarneviis {}
+
+/*ALGSE VERSIOONI CSS*/
+
+section {
+  margin-top: 40px;
+}
+
+.card-body {
+  align-content: center;
+}
+
+.jumbotron {
+  background-image: url("https://image.shutterstock.com/image-photo/natural-cosmetics-products-lavender-home-260nw-1923282491.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.062);
+}
+
+#nupp {
+  background-color: lightsalmon;
+}
+
+.icon {
+  max-width: 20%;
+  height: auto;
+}
+
+.footer {
+  margin-top: 40px;
+  background-color: #47525E;
+  height: 337px;
+}
+
+.footer-menu,
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 337px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  color: #F7F7F7;
+  align-items: flex-end;
+  min-height: 337px;
+}
+
+.footer-logo {
+  margin-left: -30px;
+  margin-right: 30px;
+}
+
+.footer-menu>label {
+  padding: 10px;
+  color: #F7F7F7;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-logo>img {
+  width: 183px;
+}
