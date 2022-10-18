@@ -37,7 +37,6 @@
   flex-direction: column;
 }
 
-
 .lnr-cart {
   width: 1.5em;
   height: 1.5em;
@@ -54,8 +53,16 @@
   align-items: center;
 }
 
-.container {
+.ostukorv-container {
   display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.footer-container {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px
 }
 
 .column-ostukorv {
@@ -83,33 +90,8 @@
   border: 0px;
 }
 
-#tarneviis {}
-
-/*ALGSE VERSIOONI CSS*/
-
 section {
   margin-top: 40px;
-}
-
-.card-body {
-  align-content: center;
-}
-
-.jumbotron {
-  background-image: url("https://image.shutterstock.com/image-photo/natural-cosmetics-products-lavender-home-260nw-1923282491.jpg");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.062);
-}
-
-#nupp {
-  background-color: lightsalmon;
-}
-
-.icon {
-  max-width: 20%;
-  height: auto;
 }
 
 .footer {
@@ -152,4 +134,76 @@ section {
 
 .footer-logo>img {
   width: 183px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text>h2 {
+  color: #1F2123;
+  font-family: Merriweather;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.banner-text>p {
+  color: #8190A5;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.banner-text>button {
+  color: #FFFFFF;
+  font-family: Lato;
+  font-size: 18px;
+  background-color: #47525E;
+  border: #47525E;
+  border-radius: 5px;
+  width: 192px;
+  height: 50px;
+}
+
+.banner-img>img {
+  height: 527px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-picture {
+  background-color: #E5E9F2;
+  width: 250px;
+  height: 250px;
+}
+
+.product-label {
+  color: #47525E;
+  font-family: Merriweather;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.product-label-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.headline {
+  color: #47525E;
+  font-family: Merriweather;
+  font-size: 26px;
+  font-weight: 500;
 }
