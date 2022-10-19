@@ -9,11 +9,24 @@
 }
 
 @media (max-width: 1199px) {
-
   .footer-contact,
   .footer-logo,
   .footer-menu {
     align-items: center !important;
+  }
+
+  .banner>button {
+    width: 160px !important;
+    height: 45px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner>button {
+    width: 141px !important;
+    height: 33px !important;
+    top: 61% !important;
+    left: 14.5% !important;
   }
 }
 
@@ -166,6 +179,9 @@ section {
 }
 
 .banner {
+  position: relative;
+  width: 100%;
+  max-width: 1104px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -174,21 +190,14 @@ section {
   align-items: center;
 }
 
-.banner-text>h2 {
-  color: #1F2123;
-  font-family: Merriweather;
-  font-size: 33px;
-  font-weight: 600;
-}
-
-.banner-text>p {
-  color: #8190A5;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.banner-text>button {
+.banner>button {
+  position: absolute;
+  top: 63%;
+  left: 12.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
   color: #FFFFFF;
   font-family: Lato;
   font-size: 18px;
@@ -199,8 +208,30 @@ section {
   height: 50px;
 }
 
-.banner-img>img {
-  height: 527px;
+.banner>img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-switch {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  cursor: pointer;
+  margin: 6px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.switch-1 {
+  background-color: #777777;
 }
 
 .product {
@@ -212,7 +243,6 @@ section {
 }
 
 .product-picture {
-  background-color: #E5E9F2;
   width: 250px;
   height: 250px;
 }
