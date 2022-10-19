@@ -9,6 +9,7 @@
 }
 
 @media (max-width: 1199px) {
+
   .footer-contact,
   .footer-logo,
   .footer-menu {
@@ -53,6 +54,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
+}
+
+.pangalingid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .lnr-cart {
@@ -89,6 +99,8 @@
 
 .column-andmed {
   display: flex;
+  min-width: 45%;
+  max-width: 50%;
   flex-direction: column;
 }
 
@@ -137,7 +149,7 @@ section {
   min-height: 337px;
 }
 
-.footer-contact > label {
+.footer-contact>label {
   margin-right: 193px;
 }
 
@@ -149,7 +161,7 @@ section {
   font-weight: 700;
 }
 
-.footer-logo >* img {
+.footer-logo>* img {
   width: 183px;
 }
 
@@ -226,7 +238,7 @@ section {
   font-weight: 500;
 }
 
-.contact-email > input {
+.contact-email>input {
   margin-top: 13px;
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -237,7 +249,7 @@ section {
   font-size: 18px;
 }
 
-.contact-email > button {
+.contact-email>button {
   color: #47525E;
   font-family: Lato;
   font-size: 18px;
@@ -251,7 +263,7 @@ section {
   margin-right: 289px;
 }
 
-.social-media > img {
+.social-media>img {
   cursor: pointer;
   margin-top: 25px;
   margin-right: 15px;

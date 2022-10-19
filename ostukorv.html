@@ -68,7 +68,7 @@
             <div class="col-lg-6">
               <h5 id="toode1Hind">Toode x eur</h5>
               <div class="counter_container">
-                <h5>Kogus<h5>
+                <h5>Kogus:<h5>
                     <button class="btn-toode" id="subtract1">-</button>
                     <span id="output1">0</span>
                     <button class="btn-toode" id="add1">+</button>
@@ -84,7 +84,7 @@
             <div class="col-lg-6">
               <h5 id="toode2Hind">Toode x eur</h5>
               <div class="counter_container">
-                <h5>Kogus<h5>
+                <h5>Kogus:<h5>
                     <button class="btn-toode" id="subtract2">-</button>
                     <span id="output2">0</span>
                     <button class="btn-toode" id="add2">+</button>
@@ -128,23 +128,37 @@
               </div>
               <div class="hinnad">
                 <div class="container-hind-transport">
-                  <p id="hind-transport">Transport: y eur</p>
+                  <h4 id="hind-transport">Transport: y eur</h4>
                 </div>
                 <div class="container-hind-kokku">
-                  <p id="hind-kokku">Kokku: z eur</p>
+                  <h4 id="hind-kokku">Kokku: z eur</h4>
                 </div>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadio" id="Pangalink">
-                <label class="form-check-label" for="Pangalink">
-                  Pangalink
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadio" id="Esto" checked>
-                <label class="form-check-label" for="Esto">
-                  ESTO 3 makseviis - maksa 3 võrdse osana 3 kuu jooksul, 0% intress!
-                </label>
+              <div class="pangalingid">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadio" id="Pangalink">
+                  <label class="form-check-label" for="Pangalink">
+                    SEB
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadio" id="Esto" checked>
+                  <label class="form-check-label" for="Esto">
+                    Swedbank
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadio" id="Pangalink">
+                  <label class="form-check-label" for="Pangalink">
+                    LHV
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadio" id="Pangalink">
+                  <label class="form-check-label" for="Pangalink">
+                    Coop
+                  </label>
+                </div>
               </div>
               <div class="p-2 mx-auto">
                 <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksma</a>
@@ -157,7 +171,7 @@
     </section>
     <!-- jalus -->
     <div class="container-fluid footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <div class="col-6 col-sm-2 footer-logo">
           <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
         </div>
