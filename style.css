@@ -299,3 +299,50 @@ section {
   margin-right: 15px;
   height: 20px;
 }
+
+.dropdown-menu > a {
+  color: #47525E;
+}
+
+.dropdown > button {
+  color: #47525E;
+}
+
+.products {
+  margin-bottom: 125px;
+}
+
+.product-filter {
+  margin-left: 75px !important;
+}
+
+.product-news {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #ff5364;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-news-label {
+  font-weight: bold;
+}
+
+.shop-product-label-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-old-price {
+  text-decoration: line-through;
+}
+
+.product-space {
+  margin-top: 50px;
+}
