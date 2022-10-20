@@ -28,4 +28,8 @@ $(document).ready(function () {
         $('.banner').hide();
         $('.banner-3').fadeIn();
     });
+
+    $('.banner-button').click(function() {
+        window.location.href='epood.html';
+    });
 });
